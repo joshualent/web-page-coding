@@ -15,7 +15,7 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: "https://your-docusaurus-site.example.com",
+  url: "https://webpagecoding.joshualent.com",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
@@ -71,7 +71,7 @@ const config: Config = {
           label: "Index",
         },
         {
-          href: "https://github.com/facebook/docusaurus",
+          href: "https://github.com/joshualent/web-page-coding",
           label: "GitHub",
           position: "right",
         },
@@ -80,6 +80,19 @@ const config: Config = {
     footer: {
       style: "dark",
       links: [
+        {
+          title: "Coding tools",
+          items: [
+            {
+              label: "HTML Validator",
+              href: "https://validator.w3.org/",
+            },
+            {
+              label: "Online Code Editor",
+              href: "https://codepen.io/pen/",
+            },
+          ],
+        },
         {
           title: "HTML References",
           items: [
@@ -98,24 +111,11 @@ const config: Config = {
           items: [
             {
               label: "Learn HTML - YouTube",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
+              href: "https://www.youtube.com/watch?v=kUMe1FH4CHE",
             },
             {
               label: "freeCodeCamp",
               href: "https://www.freecodecamp.org/learn",
-            },
-          ],
-        },
-        {
-          title: "Other",
-          items: [
-            {
-              label: "Online Editor",
-              href: "https://codepen.io/pen/",
-            },
-            {
-              label: "Website Source Code",
-              href: "https://github.com/joshualent/web-page-coding/",
             },
           ],
         },
