@@ -53,15 +53,12 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
-  plugins: [
-    [
-      "@dipakparmar/docusaurus-plugin-umami",
-      /** @type {import('@dipakparmar/docusaurus-plugin-umami').Options} */
-      {
-        websiteID: "65aed882-feb8-43ba-87e3-0cf5d6cfcc2a", // Required
-        analyticsDomain: "cloud.umami.is", // Required
-      },
-    ],
+  scripts: [
+    {
+      src: "https://cloud.umami.is/script.js",
+      "data-website-id": "65aed882-feb8-43ba-87e3-0cf5d6cfcc2a",
+      defer: true,
+    },
   ],
   themeConfig: {
     // Replace with your project's social card
