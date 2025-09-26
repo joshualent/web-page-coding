@@ -45,26 +45,7 @@ const config: Config = {
           routeBasePath: "/",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-        },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ["rss", "atom"],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-          // Useful options to enforce blogging best practices
-          onInlineTags: "warn",
-          onInlineAuthors: "warn",
-          onUntruncatedBlogPosts: "warn",
-        },
-        theme: {
-          customCss: "./src/css/custom.css",
+          editUrl: "https://github.com/joshualent/web-page-coding/tree/main/",
         },
       } satisfies Preset.Options,
     ],
@@ -72,7 +53,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: "img/docusaurus-social-card.jpg",
+    image: "img/social-card.jpg",
     navbar: {
       title: "Web Page Coding",
       logo: {
@@ -84,9 +65,8 @@ const config: Config = {
           type: "docSidebar",
           sidebarId: "tutorialSidebar",
           position: "left",
-          label: "Notes",
+          label: "Index",
         },
-        { to: "/blog", label: "Blog", position: "left" },
         {
           href: "https://github.com/facebook/docusaurus",
           label: "GitHub",
@@ -98,46 +78,46 @@ const config: Config = {
       style: "dark",
       links: [
         {
-          title: "Docs",
+          title: "HTML References",
           items: [
             {
-              label: "Tutorial",
-              to: "/intro",
+              label: "W3Schools",
+              to: "https://www.w3schools.com/html/default.asp",
+            },
+            {
+              label: "MDN Web Docs",
+              to: "https://developer.mozilla.org/en-US/docs/Web/HTML",
             },
           ],
         },
         {
-          title: "Community",
+          title: "Further Learning",
           items: [
             {
-              label: "Stack Overflow",
+              label: "Learn HTML - YouTube",
               href: "https://stackoverflow.com/questions/tagged/docusaurus",
             },
             {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
-            },
-            {
-              label: "X",
-              href: "https://x.com/docusaurus",
+              label: "freeCodeCamp",
+              href: "https://www.freecodecamp.org/learn",
             },
           ],
         },
         {
-          title: "More",
+          title: "Other",
           items: [
             {
-              label: "Blog",
-              to: "/blog",
+              label: "Online Editor",
+              href: "https://codepen.io/pen/",
             },
             {
-              label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
+              label: "Website Source Code",
+              href: "https://github.com/joshualent/web-page-coding/",
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      // copyright: `Copyright © ${new Date().getFullYear()} Joshua Lent in partnership with KVCC`,
     },
     prism: {
       theme: prismThemes.github,
