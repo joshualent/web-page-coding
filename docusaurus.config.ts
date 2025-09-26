@@ -22,8 +22,8 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  organizationName: "joshualent", // Usually your GitHub org/user name.
+  projectName: "web-page-coding", // Usually your repo name.
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -46,6 +46,9 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: "https://github.com/joshualent/web-page-coding/tree/main/",
+        },
+        theme: {
+          customCss: "./src/css/custom.css",
         },
       } satisfies Preset.Options,
     ],
