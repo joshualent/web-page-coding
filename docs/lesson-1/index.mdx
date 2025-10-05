@@ -2,3 +2,41 @@
 sidebar_position: 3
 title: Lesson 1 - HTML Syntax
 ---
+
+import { Sandpack } from "@codesandbox/sandpack-react";
+import { githubLight } from "@codesandbox/sandpack-themes";
+
+export const App = () => {
+  const files = {
+    "/index.html": {
+      code: `<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+  </body>
+</html>`
+    }
+  }
+  
+  return (
+    <Sandpack
+      files={files} 
+      theme={githubLight} 
+      template="static"
+    />
+  )  
+}
+
+:::info External Resource
+📖 **[Introduction to HTML](https://www.w3schools.com/Html/html_intro.asp)** - W3Schools provides an excellent introduction to HTML. Read through this to understand "What is HTML" and the html document strcuture.
+:::
+
+## Page Structure
+To start a new HTML page in VSCode, you can type `!` at the beginning of a `.html` file and you will get a suggestion box from VSCode. You can accept this suggestion and it will give you the following "boilerplate," aka a template.
+<App></App>
+
+
