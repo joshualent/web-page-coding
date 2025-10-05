@@ -10,13 +10,14 @@ export const App = () => {
   const files = {
     "/index.html": {
       code: `<!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My web page</title>
   </head>
   <body>
+    <h1>Hello, World!</h1>
   </body>
 </html>`
     }
@@ -27,16 +28,64 @@ export const App = () => {
       files={files} 
       theme={githubLight} 
       template="static"
+      options={{
+        editorHeight: 300,
+        wrapContent: true
+    }}
     />
   )  
 }
 
 :::info External Resource
-📖 **[Introduction to HTML](https://www.w3schools.com/Html/html_intro.asp)** - W3Schools provides an excellent introduction to HTML. Read through this to understand "What is HTML" and the html document strcuture.
+📖 **[Introduction to HTML](https://www.w3schools.com/Html/html_intro.asp)** - W3Schools provides an excellent introduction to HTML. Read through this to understand "What is HTML?" and the HTML document structure.
 :::
 
 ## Page Structure
-To start a new HTML page in VSCode, you can type `!` at the beginning of a `.html` file and you will get a suggestion box from VSCode. You can accept this suggestion and it will give you the following "boilerplate," aka a template.
-<App></App>
 
+<App></App><br/>
 
+:::note VSCode Shortcut
+You can quickly create this html document structure by typing <kbd>!</kbd> in an empty `.html` file in VSCode. You will get a pop-up labelled "emmet abbreviation" which you can accept by clicking on it or pressing <kbd>Tab</kbd>.
+:::
+
+Let's look at the elements in this starter template:
+- The `<!DOCTYPE html>` declaration at the top tells browsers this is an HTML5 document
+- The `<html>` element is the root element that wraps all content
+- The `<head>` section contains metadata about the document:
+    - `<meta charset="UTF-8">` specifies the character encoding
+    - `<meta name="viewport">` helps with mobile responsive display
+    - `<title>` sets the page title shown in browser tabs
+- The `<body>` element is where visible page content will go
+
+## Headings and Text
+The main content of web pages consists of headings, paragraphs, and other text elements. HTML provides heading elements from `<h1>` (most important) through `<h6>` (least important).
+
+Paragraphs are created with the `<p>` tag.
+
+<Sandpack
+    files={{
+        "/index.html": {
+            code: `<!DOCTYPE html>
+<html>
+    <head>
+        <title>Headings Demo</title>
+    </head>
+    <body>
+        <h1>Main Heading</h1>
+        <h2>Subheading</h2>
+        <p>This is a paragraph of text. HTML will automatically wrap text within paragraph tags.</p>
+        <h3>Smaller Heading</h3>
+        <p>Another paragraph showing different heading levels.</p>
+    </body>
+</html>`
+        }
+    }}
+    theme={githubLight}
+    template="static"
+    options={{
+        editorHeight: 400,
+        wrapContent: true
+    }}
+/>
+
+Headings are for section titles and pargraphs (`<p>`) tags are for regular text
