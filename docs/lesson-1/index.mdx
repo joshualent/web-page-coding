@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-title: Lesson 1 - HTML Syntax
+title: HTML Syntax
 ---
 
 import { Sandpack } from "@codesandbox/sandpack-react";
@@ -60,6 +60,10 @@ Let's look at the elements in this starter template:
 ## Headings and Text
 The main content of web pages consists of headings, paragraphs, and other text elements. HTML provides heading elements from `<h1>` (most important) through `<h6>` (least important).
 
+{/* :::note Tags vs. Elements
+In HTML, a "tag" refers to the markup used to create an element. For example, `<h1>` is the opening tag for a level 1 heading element, and `</h1>` is the closing tag. An "element" refers to the complete structure including the opening tag, content, and closing tag (e.g., `<h1>This is a heading</h1>`). Some tags are self-closing and do not require a closing tag, such as `<br>` for line breaks.
+::: */}
+
 Paragraphs are created with the `<p>` tag.
 
 <Sandpack
@@ -88,4 +92,3 @@ Paragraphs are created with the `<p>` tag.
     }}
 />
 
-Headings are for section titles and pargraphs (`<p>`) tags are for regular text
