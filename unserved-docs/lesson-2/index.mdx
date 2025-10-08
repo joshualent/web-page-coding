@@ -1,0 +1,47 @@
+---
+sidebar_position: 4
+title: Document Tags
+---
+
+import { Sandpack } from "@codesandbox/sandpack-react";
+import { githubLight } from "@codesandbox/sandpack-themes";
+
+export const App = () => {
+  const files = {
+    "/index.html": {
+      code: `<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My web page</title>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
+</html>`
+    }
+  }
+  
+  return (
+    <Sandpack
+      files={files} 
+      theme={githubLight} 
+      template="static"
+      options={{
+        editorHeight: 300,
+        wrapContent: true
+    }}
+    />
+  )  
+}
+
+HTML documents are made up of various tags that define the structure and content of the webpage.
+
+
+
+### Text Styling Tags
+HTML provides several tags to style text:
+- `<b>` - Bold text
+- `<i>` - Italic text
+- `<u>` - Underlined Text
